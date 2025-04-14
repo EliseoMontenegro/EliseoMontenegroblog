@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliseo Montenegro | Ingeniero de Sistemas</title>
+    <style>
+        :root {
+            --primary: #2C3E50;
+            --accent: #3498DB;
+            --secondary: #ECF0F1;
+            --action: #2ECC71;
+            --text: #333333;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--secondary);
+            margin: 0;
+            padding: 0;
+            background-image: url('subtle-circuit-pattern.png');
+            background-attachment: fixed;
+            background-size: 300px;
+            background-opacity: 0.03;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), #1A242F);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+            margin: 0;
+        }
+        
+        nav li {
+            margin: 0 1.5rem;
+        }
+        
+        nav a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--accent);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--action);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #27AE60;
+        }
+        
+        .blog-posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        
+        .post-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .post-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .post-image {
+            height: 200px;
+            background-color: var(--accent);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .post-content {
+            padding: 1.5rem;
+        }
+        
+        .post-content h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+        
+        .post-meta {
+            color: #7F8C8D;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .social-links {
+            margin: 1rem 0;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Eliseo Montenegro</h1>
+            <h1>Blog Personal</h1>
+            <p>Ingeniero de Sistemas e informática </p>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#sobre-mi">Sobre Mí</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Soluciones Tecnológicas con Enfoque Humano</h1>
+            <p>Compartiendo conocimientos sobre ingeniería de sistemas, desarrollo de software, arquitectura de soluciones y las últimas tendencias tecnológicas.</p>
+            <a href="#blog" class="btn">Explora mis artículos</a>
+        </div>
+    </section>
+    
+    <section id="blog" class="container">
+        <h2>Últimos Artículos</h2>
+        <div class="blog-posts">
+            <article class="post-card">
+                <div class="post-image" style="background-image: url('cloud-computing.jpg');"></div>
+                <div class="post-content">
+                    <h3>Transformación Digital en la Nube</h3>
+                    <div class="post-meta">15 Mayo 2023 | Cloud Computing</div>
+                    <p>Exploramos las mejores estrategias para migrar sistemas legacy a entornos cloud con máxima eficiencia.</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </article>
+            
+            <article class="post-card">
+                <div class="post-image" style="background-image: url('cybersecurity.jpg');"></div>
+                <div class="post-content">
+                    <h3>Seguridad en la Era del IoT</h3>
+                    <div class="post-meta">28 Abril 2023 | Cybersecurity</div>
+                    <p>Protocolos esenciales para proteger sistemas interconectados en entornos empresariales críticos.</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </article>
+            
+            <article class="post-card">
+                <div class="post-image" style="background-image: url('ai.jpg');"></div>
+                <div class="post-content">
+                    <h3>IA Aplicada a Sistemas Empresariales</h3>
+                    <div class="post-meta">10 Abril 2023 | Inteligencia Artificial</div>
+                    <p>Cómo implementar modelos de machine learning para optimizar procesos operativos complejos.</p>
+                    <a href="#" class="btn">Leer más</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <section id="sobre-mi" style="background-color: white; padding: 4rem 0;">
+        <div class="container" style="display: flex; align-items: center; gap: 3rem;">
+            <div style="flex: 1;">
+                <img src="img/WhatsApp Image 2025-04-02 at 3.51.29 PM.jpeg" alt="Eliseo Montenegro" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            </div>
+            <div style="flex: 2;">
+                <h2>Sobre Eliseo Montenegro</h2>
+                <p>Soy estudiante de Ingeniería de Sistemas e Informática en la Universidad Continental, apasionado por la tecnología. Mi interés se centra en el diseño de software, el desarrollo de aplicaciones móviles y la creación de páginas web, buscando siempre fusionar funcionalidad e innovación en cada proyecto..</p>
+                <p>Apasionado por compartir conocimiento y ayudar a profesionales a crecer en el campo de la tecnología.</p>
+                <a href="#" class="btn">Descargar CV</a>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>¿Tienes preguntas o quieres colaborar en algún proyecto?</p>
+            <p>jesus107925@gmail.com | +51 985679245</p>
+            
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-medium"></i></a>
+            </div>
+            
+            <p>&copy; 2023 Eliseo Montenegro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
